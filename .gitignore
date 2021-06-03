@@ -1,0 +1,13 @@
+
+CalculatorContractsLib/bin/
+CalculatorProxyLib/bin/
+CalculatorServiceLib/bin/
+PipeClient/bin/
+ServiceHost/bin/
+TcpClient/bin/
+CalculatorContractsLib/obj/
+CalculatorProxyLib/obj/
+CalculatorServiceLib/obj/
+PipeClient/obj/
+ServiceHost/obj/
+TcpClient/obj/

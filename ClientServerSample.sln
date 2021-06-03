@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorServiceHost", "ServiceHost\CalculatorServiceHost.csproj", "{A08B2CE6-AD28-4D2D-821A-7EB7A38ED904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorContractsLib", "CalculatorContractsLib\CalculatorContractsLib.csproj", "{CBB90E45-39DD-4CD2-96FF-1B9DA0304B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorServiceLib", "CalculatorServiceLib\CalculatorServiceLib.csproj", "{1A4147C8-FAF4-42F3-9D34-70150B4D5ADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorProxyLib", "CalculatorProxyLib\CalculatorProxyLib.csproj", "{6F1701E0-4DB9-4E38-A778-B1642CFFC191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PipeClient", "PipeClient\PipeClient.csproj", "{A1D19443-0B54-43A3-B249-09E73A7B2B6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClient", "TcpClient\TcpClient.csproj", "{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A08B2CE6-AD28-4D2D-821A-7EB7A38ED904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08B2CE6-AD28-4D2D-821A-7EB7A38ED904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08B2CE6-AD28-4D2D-821A-7EB7A38ED904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08B2CE6-AD28-4D2D-821A-7EB7A38ED904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB90E45-39DD-4CD2-96FF-1B9DA0304B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB90E45-39DD-4CD2-96FF-1B9DA0304B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB90E45-39DD-4CD2-96FF-1B9DA0304B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB90E45-39DD-4CD2-96FF-1B9DA0304B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4147C8-FAF4-42F3-9D34-70150B4D5ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4147C8-FAF4-42F3-9D34-70150B4D5ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4147C8-FAF4-42F3-9D34-70150B4D5ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4147C8-FAF4-42F3-9D34-70150B4D5ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1701E0-4DB9-4E38-A778-B1642CFFC191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1701E0-4DB9-4E38-A778-B1642CFFC191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1701E0-4DB9-4E38-A778-B1642CFFC191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1701E0-4DB9-4E38-A778-B1642CFFC191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04ACA364-2130-4B88-8EEF-EB278ED45A1D}
+	EndGlobalSection
+EndGlobal
