@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A4147C8-FAF4-42F3-9D34-70150B4D5ADD}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CalculatorServiceLib</RootNamespace>
-    <AssemblyName>CalculatorServiceLib</AssemblyName>
+    <ProjectGuid>{F1E67871-A40A-490A-A930-87233F4798AC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RestService</RootNamespace>
+    <AssemblyName>RestService</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,7 +35,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,13 +47,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculatorService.cs" />
+    <Compile Include="RestService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CalculatorContractsLib\CalculatorContractsLib.csproj">
       <Project>{CBB90E45-39DD-4CD2-96FF-1B9DA0304B1D}</Project>
       <Name>CalculatorContractsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalculatorProxyLib\CalculatorProxyLib.csproj">
+      <Project>{6f1701e0-4db9-4e38-a778-b1642cffc191}</Project>
+      <Name>CalculatorProxyLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestServiceContractsLib\RestServiceContractsLib.csproj">
+      <Project>{2F0B539B-AEDB-4CD9-AFDE-69870D10B4F6}</Project>
+      <Name>RestServiceContractsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCFExtensibility\WCFExtensibility.csproj">
+      <Project>{C8B88A80-0A0B-4D1F-A0DD-86905EEC9293}</Project>
+      <Name>WCFExtensibility</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

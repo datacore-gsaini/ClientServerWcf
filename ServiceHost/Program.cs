@@ -4,9 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
+using System.ServiceModel.Description;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using WCFExtensibility;
 
 namespace CalculatorServiceHost
 {
@@ -16,19 +18,16 @@ namespace CalculatorServiceHost
 
         static void Main(string[] args)
         {
-            var communicationObject = new ServiceHost(typeof(CalculatorService));
+            var svc = new ServiceHost(typeof(CalculatorService));
+            svc.Closed += CommunicationObject_Closed;
 
-            communicationObject.AddServiceEndpoint(typeof(ICalculatorService),
-                new NetNamedPipeBinding(),
-                "net.pipe://localhost/CalculatorService");
+            foreach (ServiceEndpoint ep in svc.Description.Endpoints)
+            { 
+                ep.EndpointBehaviors.Add(new ServerMessageInspectorEndpointBehavior());
+                //ep.EndpointBehaviors.Add(new ClientMessageInspectorEndpointBehavior());
+            }
 
-            communicationObject.AddServiceEndpoint(typeof(ICalculatorService),
-                new NetTcpBinding(),
-                "net.tcp://localhost:8009/CalculatorService");
-
-            communicationObject.Closed += CommunicationObject_Closed;
-
-            communicationObject.Open();
+            svc.Open();
 
             Console.WriteLine("Calculator Service Started...");
 

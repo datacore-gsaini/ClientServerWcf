@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A4147C8-FAF4-42F3-9D34-70150B4D5ADD}</ProjectGuid>
+    <ProjectGuid>{2F0B539B-AEDB-4CD9-AFDE-69870D10B4F6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CalculatorServiceLib</RootNamespace>
-    <AssemblyName>CalculatorServiceLib</AssemblyName>
+    <RootNamespace>RestServiceContractsLib</RootNamespace>
+    <AssemblyName>RestServiceContractsLib</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -34,6 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,14 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculatorService.cs" />
+    <Compile Include="IRestService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CalculatorContractsLib\CalculatorContractsLib.csproj">
-      <Project>{CBB90E45-39DD-4CD2-96FF-1B9DA0304B1D}</Project>
-      <Name>CalculatorContractsLib</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,3 +11,12 @@ CalculatorServiceLib/obj/
 PipeClient/obj/
 ServiceHost/obj/
 TcpClient/obj/
+WCFExtensibility/bin/
+WCFExtensibility/obj/
+RestServiceContractsLib/bin/
+RestServiceContractsLib/obj/
+RestClient/bin/
+RestClient/obj/
+RestService/bin/
+RestService/obj/
+.vs/
