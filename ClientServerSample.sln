@@ -11,10 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorServiceLib", "Cal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorProxyLib", "CalculatorProxyLib\CalculatorProxyLib.csproj", "{6F1701E0-4DB9-4E38-A778-B1642CFFC191}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PipeClient", "PipeClient\PipeClient.csproj", "{A1D19443-0B54-43A3-B249-09E73A7B2B6E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClient", "TcpClient\TcpClient.csproj", "{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestService", "RestService\RestService.csproj", "{F1E67871-A40A-490A-A930-87233F4798AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestServiceContractsLib", "RestServiceContractsLib\RestServiceContractsLib.csproj", "{2F0B539B-AEDB-4CD9-AFDE-69870D10B4F6}"
@@ -22,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestClient", "RestClient\RestClient.csproj", "{10AA32E5-9622-458B-B7B3-16CA5F285505}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFExtensibility", "WCFExtensibility\WCFExtensibility.csproj", "{C8B88A80-0A0B-4D1F-A0DD-86905EEC9293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorServiceClient", "CalculatorServiceClient\CalculatorServiceClient.csproj", "{A1D19443-0B54-43A3-B249-09E73A7B2B6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,14 +43,6 @@ Global
 		{6F1701E0-4DB9-4E38-A778-B1642CFFC191}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F1701E0-4DB9-4E38-A778-B1642CFFC191}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F1701E0-4DB9-4E38-A778-B1642CFFC191}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F1E67871-A40A-490A-A930-87233F4798AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F1E67871-A40A-490A-A930-87233F4798AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1E67871-A40A-490A-A930-87233F4798AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +59,10 @@ Global
 		{C8B88A80-0A0B-4D1F-A0DD-86905EEC9293}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8B88A80-0A0B-4D1F-A0DD-86905EEC9293}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8B88A80-0A0B-4D1F-A0DD-86905EEC9293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D19443-0B54-43A3-B249-09E73A7B2B6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

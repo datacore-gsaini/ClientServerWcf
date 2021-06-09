@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB1F0272-A5B7-4E4C-8EF5-B06C70ECDDFE}</ProjectGuid>
+    <ProjectGuid>{A1D19443-0B54-43A3-B249-09E73A7B2B6E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TcpClient</RootNamespace>
-    <AssemblyName>TcpClient</AssemblyName>
+    <RootNamespace>CalculatorServiceClient</RootNamespace>
+    <AssemblyName>CalculatorServiceClient</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="CalculatorServiceClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -14,7 +14,7 @@ namespace CalculatorServiceHost
 {
     class Program
     {
-        static readonly AutoResetEvent handle = new AutoResetEvent(false);
+        static readonly AutoResetEvent Handle = new AutoResetEvent(false);
 
         static void Main(string[] args)
         {
@@ -23,7 +23,7 @@ namespace CalculatorServiceHost
 
             foreach (ServiceEndpoint ep in svc.Description.Endpoints)
             { 
-                ep.EndpointBehaviors.Add(new ServerMessageInspectorEndpointBehavior());
+                //ep.EndpointBehaviors.Add(new ServerMessageInspectorEndpointBehavior());
                 //ep.EndpointBehaviors.Add(new ClientMessageInspectorEndpointBehavior());
             }
 
@@ -31,12 +31,12 @@ namespace CalculatorServiceHost
 
             Console.WriteLine("Calculator Service Started...");
 
-            handle.WaitOne();
+            Handle.WaitOne();
         }
 
         private static void CommunicationObject_Closed(object sender, EventArgs e)
         {
-            handle.Set();
+            Handle.Set();
         }
     }
 }

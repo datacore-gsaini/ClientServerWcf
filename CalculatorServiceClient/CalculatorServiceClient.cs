@@ -5,14 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PipeClient
+namespace CalculatorServiceClient
 {
-    class Program
+    class CalculatorServiceClient
     {
         static void Main(string[] args)
         {
-            CalculatorServiceProxy calc = CalculatorProxyFactory.GetPipePorxy();
+
+            CalculatorServiceProxy calc = CalculatorProxyFactory.GetPipeProxy();
             Console.WriteLine($"Pipe Client : {calc.Add(10, 20)}");
+            Console.Read();
+
+            calc = CalculatorProxyFactory.GetTcpProxy();
+            Console.WriteLine($"TCP Client : {calc.Add(10, 20)}");
             Console.Read();
 
         }
