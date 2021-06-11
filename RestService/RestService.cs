@@ -22,11 +22,12 @@ namespace RestService
         public static string RequestSource;
 
         //readonly CalculatorServiceProxy calcProxy = CalculatorProxyFactory.GetTcpProxy();
-        readonly AbstractProxy calcProxy = CalculatorProxyFactory.GetDynamicTcpProxy();
+        //readonly AbstractProxy calcProxy = CalculatorProxyFactory.GetDynamicTcpProxy();
+        readonly AbstractProxy calcProxy = CalculatorProxyFactory.GetDynamicTcpProxy(new ClientMessageInspectorEndpointBehavior());
 
         public RestService()
         {
-            calcProxy.Endpoint.EndpointBehaviors.Add(new ClientMessageInspectorEndpointBehavior());
+            //calcProxy.Endpoint.EndpointBehaviors.Add(new ClientMessageInspectorEndpointBehavior());
         }
 
         public int Add(int a, int b)
@@ -70,7 +71,7 @@ namespace RestService
 
             foreach(ServiceEndpoint ep in svc.Description.Endpoints)
             {
-               ep.EndpointBehaviors.Add(new RestServerMessageInspectorEndpointBehavior());
+               //ep.EndpointBehaviors.Add(new RestServerMessageInspectorEndpointBehavior());
             //    ep.EndpointBehaviors.Add(new ClientMessageInspectorEndpointBehavior());
             }
 

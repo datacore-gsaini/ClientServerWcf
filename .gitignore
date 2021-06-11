@@ -20,3 +20,6 @@ RestClient/obj/
 RestService/bin/
 RestService/obj/
 .vs/
+CalculatorServiceClient/bin/
+CalculatorServiceClient/obj/
+

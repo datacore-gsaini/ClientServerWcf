@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
+using WCFExtensibility;
 
 namespace CalculatorProxyLib
 {
@@ -22,17 +23,25 @@ namespace CalculatorProxyLib
         public ServiceEndpoint Endpoint => Factory.Endpoint;
     }
 
+
     public static class CalculatorProxyFactory
     {
-        public static AbstractProxy GetDynamicTcpProxy()
+        public static AbstractProxy GetDynamicTcpProxy(IEndpointBehavior endpointBehavior = null)
         {
             Binding binding = new NetTcpBinding();
             var factory = new ChannelFactory<ICalculatorService>(binding);
+
+            //factory.Endpoint.EndpointBehaviors.Add(new ClientMessageInspectorEndpointBehavior());
+            
             var address = new EndpointAddress("net.tcp://localhost:8009/CalculatorService");
 
+            if(endpointBehavior != null)
+                factory.Endpoint.EndpointBehaviors.Add(endpointBehavior);
+
+            var channel = factory.CreateChannel(address);
             var proxy = new AbstractProxy()
             {
-                Channel = factory.CreateChannel(address),
+                Channel = channel,
                 Factory = factory
             };
 

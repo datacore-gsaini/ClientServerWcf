@@ -50,6 +50,10 @@
       <Project>{CBB90E45-39DD-4CD2-96FF-1B9DA0304B1D}</Project>
       <Name>CalculatorContractsLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WCFExtensibility\WCFExtensibility.csproj">
+      <Project>{C8B88A80-0A0B-4D1F-A0DD-86905EEC9293}</Project>
+      <Name>WCFExtensibility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
